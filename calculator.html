@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    <link rel="stylesheet" href="stylesheet.css">
+<script src="function.js"></script>
+</head>
+
+<body>
+   <div class="calculator">
+     
+    
+        <input type="text" placeholder="write digits to calculate" id="input-box">
+
+        <div>
+          <button onclick=" allclear()" class="btn-design">AC</button>
+          <button class="btn-design">DEL</button>
+          <button onclick="pick('%')" class="btn-design">%</button>
+          <button onclick="pick('/')" class="btn-design">/</button>
+        </div>
+        
+        <div>
+            <button onclick="pick(7)">7</button>
+            <button onclick="pick(8)">8</button>
+            <button onclick="pick(9)">9</button>
+            <button onclick="pick('*')" class="btn-design">*</button>
+        </div>
+
+        <div>
+            <button onclick="pick(4)">4</button>
+            <button onclick="pick(5)">5</button>
+            <button onclick="pick(6)">6</button>
+            <button onclick="pick('-')" class="btn-design">-</button>
+        </div>
+
+
+        <div>
+            <button onclick="pick(1)">1</button>
+            <button onclick="pick(2)">2</button>
+            <button onclick="pick(3)">3</button>
+            <button onclick="pick('+')" class="btn-design">+</button>
+        </div>
+
+
+        <div>
+            <button onclick="pick('00')">00</button>
+            <button onclick="pick(0)">0</button>
+            <button onclick="pick('.')">.</button>
+            <button class="equalbtn" onclick="solve()">=</button>
+          </div>
+
+   </div>
+</body>
+</html>
